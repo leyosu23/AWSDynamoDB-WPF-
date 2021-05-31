@@ -1,0 +1,35 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_301037418_yoonseop__Lab2"
+        xmlns:Models="clr-namespace:_301037418_yoonseop__Lab2.Models" x:Class="_301037418_yoonseop__Lab2.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="createTableButton" Content="Create table" HorizontalAlignment="Left" Margin="317,61,0,0" VerticalAlignment="Top" Width="75" Click="createTableButton_Click"/>
+        <Label Content="User email:" HorizontalAlignment="Left" Margin="30,61,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="Book Information" HorizontalAlignment="Left" Height="275" Margin="19,119,0,0" VerticalAlignment="Top" Width="320" RenderTransformOrigin="-0.56,0.53"/>
+        <GroupBox Header="GroupBox" HorizontalAlignment="Left" Height="275" Margin="344,119,0,0" VerticalAlignment="Top" Width="438" RenderTransformOrigin="-0.56,0.53">
+            <DataGrid x:Name="DataGrid" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="226" Margin="10,10,0,0" VerticalAlignment="Top" Width="406"/>
+        </GroupBox>
+        <Button x:Name="getBookListButton" Content="Get your book list" HorizontalAlignment="Left" Margin="409,61,0,0" VerticalAlignment="Top" Width="107" RenderTransformOrigin="0.103,0.4" Click="getBookListButton_Click"/>
+        <Button x:Name="addSnapsnotButton" Content="Add snapshot" HorizontalAlignment="Left" Margin="534,61,0,0" VerticalAlignment="Top" Width="92" Click="addSnapsnotButton_Click"/>
+        <Button x:Name="displaySnapShotButton" Content="Display snapshot" HorizontalAlignment="Left" Margin="643,61,0,0" VerticalAlignment="Top" Width="104" Click="displaySnapShotButton_Click_"/>
+        <TextBox x:Name="emailTextbox" HorizontalAlignment="Left" Height="23" Margin="124,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="ISBN" HorizontalAlignment="Left" Margin="41,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.971,0.308"/>
+        <TextBox x:Name="ISBNTextbox" HorizontalAlignment="Left" Height="23" Margin="159,181,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Author1" HorizontalAlignment="Left" Margin="41,215,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Author1Textbox" HorizontalAlignment="Left" Height="23" Margin="159,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Author2" HorizontalAlignment="Left" Margin="41,255,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Author2Textbox" HorizontalAlignment="Left" Height="23" Margin="159,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Author3" HorizontalAlignment="Left" Margin="41,288,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Author3Textbox" HorizontalAlignment="Left" Height="23" Margin="159,291,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Title" HorizontalAlignment="Left" Margin="40,324,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.312,1.077"/>
+        <TextBox x:Name="TitleTextbox" HorizontalAlignment="Left" Height="23" Margin="159,327,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="clearButton" Content="Clear" HorizontalAlignment="Left" Margin="41,360,0,0" VerticalAlignment="Top" Width="75" Click="clearButton_Click"/>
+        <Button x:Name="addToMyBookshelfButton" Content="Add to my bookshelf" HorizontalAlignment="Left" Margin="159,360,0,0" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.481,0.8" Click="addToMyBookshelfButton_Click"/>
+
+    </Grid>
+</Window>
